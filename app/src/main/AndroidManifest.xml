@@ -13,13 +13,7 @@
         android:theme="@style/Theme.DemoRiddle"
         tools:targetApi="31">
         <activity
-            android:name=".ThirdActivity"
-            android:exported="false" />
-        <activity
-            android:name=".AnswerActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".AnswerActivity1"
+            android:name=".activity_answer"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
