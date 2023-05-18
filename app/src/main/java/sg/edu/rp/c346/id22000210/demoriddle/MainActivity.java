@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     // Variables for user interface objects are located inside the class
     Button btnRevealQ1;
+    Button btnRevealQ2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         // Step 2 - find the user interface object
         // Set the value for the variables
         btnRevealQ1 = findViewById(R.id.buttonRevealQ1);
+        btnRevealQ2 = findViewById(R.id.buttonRevealQ2);
 
         //Event handling Step 3
         btnRevealQ1.setOnClickListener(new View.OnClickListener() {
@@ -29,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
             public void onClick (View view) {
                 Intent intent = new Intent(MainActivity.this, AnswerActivity1.class);
                 intent.putExtra("Question", "Q1");
+                startActivity(intent);
+            }
+
+        });
+
+        btnRevealQ2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick (View view) {
+                Intent intent = new Intent(MainActivity.this, AnswerActivity2.class);
+                intent.putExtra("Question", "Q2");
                 startActivity(intent);
             }
 
